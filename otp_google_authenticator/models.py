@@ -5,7 +5,7 @@ from django_otp.models import Device
 from django_otp.plugins.otp_totp.models import TOTPDevice
 
 from base64 import b32encode, b32decode
-from urllib import quote_plus
+from urllib.parse import quote_plus
 from os import urandom
 
 def base32_validator(key):
